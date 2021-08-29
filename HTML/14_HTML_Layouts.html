@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML LAYOUTS</title>
+	<style>
+		body
+		{
+			margin: 0px;
+			text-align: center;
+		}
+
+		header
+		{
+			background-color: black;
+			color: white;
+			padding: 20px;
+		}
+
+		header h1
+		{
+			margin: 0px;
+			font-size: 40px;
+		}
+
+		nav
+		{
+			background-color: orange;
+			padding: 10px;
+		}
+
+		nav a
+		{
+			color: white;
+			padding: 7px 20px;
+			text-decoration: none;
+			background-color: blue;
+			margin: 10px;
+			border-radius: 20px;
+		}
+
+		nav a:hover
+		{
+			background-color: black;
+			box-shadow: 0 0 10px white;
+		}
+
+		aside
+		{
+			background-color: black;
+			width: 250px;
+			height: 820px;
+			float: left;
+		}
+
+		aside a
+		{
+			color: white;
+			text-decoration: none;
+			display: block;
+			margin-bottom: 40px;
+			background-color: grey;
+			padding: 7px 20px;
+			border-radius: 20px;
+		}
+
+		aside a:hover
+		{
+			box-shadow: 0 0 10px white;
+		}		
+
+		#first
+		{
+			position: relative;
+			top: 10px;
+		}
+
+		section
+		{
+			margin-left: 251px;
+			background-color: black;
+			color: white;
+		}
+
+		section article h1
+		{
+			margin: 0px;
+		}
+
+		section article
+		{
+			background-color: grey;
+			padding: 5px;
+			margin-bottom: 10px;
+			border-radius: 20px;
+			box-shadow: 0 0 10px white;
+		}
+
+		footer
+		{
+			margin-left: 251px;
+			background-color: black;
+			color: white;
+			margin-top: 10px;
+		}
+
+		footer h1
+		{
+			margin: 10px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../fonts/css/all.css">
+</head>
+<body>
+	<!---Header--->
+	<header>
+		<h1>Indian Circket</h1>
+	</header>
+	<!-- nav bars -->
+	<nav>
+		<a href="#" i class="fas fa-home">Home</a>
+		<a href="#" i class="fa fa-newspaper">News</a>
+		<a href="#" i class="fa fa-image">Gallery</a>
+		<a href="#">About</a>
+		<a href="#">ContactUs</a>
+	</nav>
+	<!-- side bars -->
+	<aside>
+		<a href="#" id="first">player 1</a>
+		<a href="#">player 2</a>
+		<a href="#">player 3</a>
+		<a href="#">player 4</a>
+		<a href="#">player 5</a>
+		<a href="#">player 6</a>
+		<a href="#">player 7</a>
+	</aside>
+	<section>
+		<article>
+			<h1>player 1</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+		<article>
+			<h1>player 2</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+		<article>
+			<h1>player 3</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+		<article>
+			<h1>player 4</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+	</section>
+	<footer>
+		<h1>Copy rights:&copy;2021</h1>
+		<small>All rights are reserved &reg;</small>
+	</footer>
+</body>
+</html>

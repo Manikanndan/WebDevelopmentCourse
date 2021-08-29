@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Event Listener</title>
+	<style>
+		div
+		{
+			background-color: limegreen;
+			padding: 20px;
+			text-align: center;
+		}
+
+		button
+		{
+			padding: 10px 17px;
+			width: 140px;
+			background-color: blue;
+			outline: none;
+			border: none;
+			color: white;
+		}
+
+		button:hover
+		{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h2 id="display">Message</h2>
+		<button id="hello-btn">Hello</button>
+		<button id="hi-btn">Hi</button>
+		<button id="bye-btn">Bye</button>
+	</div>
+<script>
+	let helloBtn=document.querySelector("#hello-btn");
+	helloBtn.addEventListener('click',function()
+	{
+		document.querySelector('#display').innerText='Hello';
+		document.querySelector('#display').style.color='whitesmoke';
+	});
+
+
+	let hiBtn=document.querySelector("#hi-btn");
+	hiBtn.addEventListener('click',function()
+	{
+		document.querySelector('#display').innerText='Hi';
+		document.querySelector('#display').style.color='blue';
+	});
+
+	let byeBtn=document.querySelector("#bye-btn");
+	byeBtn.addEventListener('click',function()
+	{
+		document.querySelector('#display').innerText='Bye';
+		document.querySelector('#display').style.color='red';
+	});	
+</script>
+</body>
+</html>

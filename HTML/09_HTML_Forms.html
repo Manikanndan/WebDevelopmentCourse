@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML FORMS</title>
+	<style>
+		div
+		{
+			background-color: lightcoral;
+			width: 350px;
+			border-radius: 30px;
+			box-shadow: 0 0 10px black;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<hr>
+	<div>
+		<form>
+			<table>
+				<tr>
+					<td><label>Username:-</label></td>
+					<td><input type="text" name="usn"></td>
+				</tr>
+				<tr>
+					<td><label>Password:-</label></td>
+					<td><input type="password" name="pw"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" name="sub">
+						<input type="reset" name="res">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<hr>
+	<div>
+		<label>Select Course</label>
+		<select>
+			<option>....Select.....</option>
+			<option>JAVA</option>
+			<option>PYTHON</option>
+			<option>MERN</option>
+		</select>
+	</div>
+	<hr>
+	<div>
+		<label>Select City</label>
+		<input list="i">
+		<datalist id="i">
+			<option>Bangalore</option>
+			<option>Chennai</option>
+			<option>Trivandrum</option>
+			<option>Hydrabad</option>
+		</datalist>
+	</div>
+	<hr>
+	<div>
+		<form>
+			<label>Is HTML Easy?</label>
+			<input type="radio" name="r1">YES
+			<input type="radio" name="r1">NO
+		</form>
+	</div>
+	<hr>
+	<div>
+		<form>
+			<label>Select Language Known</label><br>
+			<input type="checkbox" name="">ENGLISH
+			<input type="checkbox" name="">KANNADA
+			<input type="checkbox" name="">TAMIL
+			<input type="checkbox" name="">HINDI
+		</form>
+	</div>
+	<hr>
+</body>
+</html>

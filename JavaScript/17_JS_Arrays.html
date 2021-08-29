@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arrays</title>
+</head>
+<body>
+<script>
+	let colors=['white','red','blue','orange'];
+	console.log(colors);
+
+	//acessing values
+	console.log(colors[0]);
+	console.log(colors[3]);
+	console.log(colors[7]);//undefined
+
+	//for loop
+	let output='';
+	for(let i=0;i<colors.length;i++)
+	{
+		// console.log(colors[i]);
+		output+=`${colors[i]} `;
+	}
+	console.log(output);
+
+	//for in loop
+	for(let color in colors)
+	{
+		console.log(colors[color]);
+	}
+
+	//for of loop
+	for(let color of colors)
+	{
+		console.log(color);
+	}
+
+	//for each function
+	colors.forEach((color)=>
+	{
+		console.log(colors);
+	});
+	
+</script>
+</body>
+</html>

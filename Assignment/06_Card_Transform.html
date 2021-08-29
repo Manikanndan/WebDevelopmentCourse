@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CARD TRANSFORM</title>
+	<style>
+		div
+		{
+			width: 700px;
+			height: 450px;
+			margin: 100px auto;
+			border-radius: 20px;
+			box-shadow: 0 0 10px black;
+			position: relative;
+			overflow: hidden;
+			background-color: lightblue;
+		}	
+
+		div img
+		{
+			width: inherit;
+			height: inherit;
+		}
+
+		.text1
+		{
+			position: absolute;
+			top: -100px;
+			left: 0px;
+			width: 50%;
+			transform: translateX(0%);
+			transition: all 1s;
+		}
+
+		div:hover .text1
+		{
+			transform: translateX(-100%);
+		}
+
+		.text2
+		{
+			position: absolute;
+			top: -100px;
+			left: 353px;
+			width: 50%;
+			transform: translateX(0%);
+			transition: all 1s;
+		}
+
+		div:hover .text2
+		{
+			transform: translateX(100%);
+		}
+
+		p
+		{
+			padding: 20px;
+			text-align: justify;
+			text-transform: capitalize;
+			font-style: italic;
+			font-style: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://media.istockphoto.com/photos/pakistan-monument-islamabad-picture-id535695503?k=6&m=535695503&s=612x612&w=0&h=uP8aDK4xlfjk3kEiyr9wwUiuh80UwAiICweFpiBDosk=">	
+		<div class="text1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="text2">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+</body>
+</html>

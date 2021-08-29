@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>InnerText and InnerHtml</title>
+</head>
+<body>
+	<div id="msg">
+		
+	</div>
+	<script>
+		let headingTag=`<h1>
+							<span style="color:red;">Good</span>
+							<span style="color:blue;">Morning</span
+						</h1>`
+		console.log(typeof headingTag);
+
+		let divTag=document.querySelector('#msg');
+		divTag.innerText=headingTag;
+		divTag.innerHTML=headingTag;
+	</script>
+</body>
+</html>

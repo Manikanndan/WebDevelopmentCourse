@@ -1,0 +1,80 @@
+#abc
+{
+	color: #D60AA8;
+	background-color: blue;
+	width: 46px;
+	border-radius: 25px;
+	border: 2px solid #D60AA8;
+	padding: 25px 40px 25px 20px;
+	margin-left: 30px;
+}
+
+#xyz
+{
+	color: #3BFA38;
+	background-color: #044B03;
+	width: 22px;
+	padding: 25px 55px 25px 30px;
+	border-radius: 25px;
+	border:10px inset #3BFA38;
+	margin-left: 120px;
+	margin-top: 2px;
+}
+
+#mno
+{
+	color: #284BFA;
+	background-color: #F1CF11;
+	width: 45px;
+	padding: 35px 90px 35px 50px;
+	border-radius: 20px;
+	border:3px dashed #284BFA;
+	margin-top: 2px;
+	margin-left: 240px;
+}
+
+#sdf
+{
+	color: #284BFA;
+	background-color: #F3AFF9;
+	width:28px;
+	padding:25px;
+	border-radius: 15px;
+	border:2px dotted #284BFA;
+}
+
+#gho
+{
+	color: #25CA52;
+	background-color: #DCFFD6;
+	width: 47px;
+	border-radius: 20px;
+	border: 4px solid #0A3A0D;
+	padding: 25px 40px 25px 20px;
+	margin-top: 2px;
+	margin-left: 420px;
+}
+
+#tro
+{
+	color: #FB71F7;
+	background-color: #BA00B3;
+	width: 35px;
+	border-radius: 20px;
+	border: 5px outset #FB71F7;
+	padding: 25px 40px 25px 40px;	
+	margin-top: 2px;
+	margin-left: 520px;
+}
+
+#psd
+{
+	color: #0338FA;
+	background-color: #FF205C;
+	width: 65px;
+	border-radius: 20px;
+	border:10px dotted #0338FA;
+	padding: 25px 25px 25px 25px;	
+	margin-top: 2px;
+	margin-left: 640px;
+}

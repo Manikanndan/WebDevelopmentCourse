@@ -1,0 +1,21 @@
+section .cont-1
+{
+	width: 85%;
+	margin: 60px auto;	
+}
+section .cont-1 h3
+{
+	color: #040e27;
+	text-align: left;
+	font-size: 38px;
+	font-weight: 400;
+}
+section .cont-1 p
+{
+	font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #7a838b;
+    margin-bottom: 18px;
+    text-align: justify;	
+}

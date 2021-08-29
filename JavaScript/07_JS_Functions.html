@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Functions</title>
+</head>
+<body>
+	<script>
+		function addNumbers()
+		{
+			let  a=20;
+			let b=30;
+			console.log(`Addition of two numbers is:${a+b}`)
+		}
+		addNumbers();
+
+		//function expression
+
+		let mulNumbers=function()
+		{
+			let a=20;
+			let b=30;
+			console.log(`Multiplication of two number is:${a*b}`)
+		}
+		mulNumbers();
+
+		let subNumber=()=>
+		{
+			let a=20;
+			let b=30;
+			console.log(`subtraction of two numbers is:${a-b}`)
+		}
+		subNumber();
+
+		let addNumbers1=(a,b)=>
+		{
+			console.log(`Addtion of two numbers is:${a+b}`)
+		}
+		addNumbers1();
+
+		let addNumbers2=(a,b)=>
+		{
+			console.log(`Addtion of two numbers is:${a+b}`)
+		}
+		addNumbers2(10,20);
+
+		let addNumbers3=(a,b)=>
+		{
+			console.log(`Addtion of two numbers is:${a+b}`)
+		}
+		addNumbers3(10,50,80);
+
+		let addNumbers4=(a=30,b=70)=>
+		{
+			console.log(`Addtion of two numbers is:${a+b}`)
+		}
+		addNumbers4(50,120);
+	</script>
+</body>
+</html>

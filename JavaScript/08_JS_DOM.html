@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DOM Manupulation</title>
+</head>
+<body>
+	<h1 class="abc">Welcome to DOM.</h1>
+	<h1 id="xyz">Welcome to DOM.</h1>
+	<h1 class="abc">Welcome to DOM.</h1>
+	<a href="#">Hyper Link</a>
+	<a href="#" id="hyper">Hyper Link</a>
+	<a href="#" class="hyp">Hyper Link</a>
+	<div>
+		<a href="#">Hyper Link</a>
+	</div>
+	<span id="msg"></span>
+	
+	<script>
+		let htmlFile=document;
+		console.log(htmlFile);
+
+		let headTag =document.head;
+		console.log(headTag);
+
+		let bodyTag=document.body;
+		console.log(bodyTag);
+
+		// let headingTag = document.body.h1;
+		// console.log(headingTag);//undefinded
+
+		let headingTag = document.getElementsByTagName('h1');
+		console.log(headingTag);
+
+		let classHeadingTag = document.getElementsByClassName('abc');
+		console.log(classHeadingTag);
+
+		let idHeadingTag = document.getElementById('xyz');
+		console.log(idHeadingTag);
+
+		let anchorTag = document.querySelector('a'); //ES6 version
+		console.log(anchorTag);
+
+		let anchorTagId = document.querySelector('#hyper');
+		console.log(anchorTagId);
+
+		let anchorTagClass = document.querySelector('.hyp');
+		console.log(anchorTagClass);
+
+		let anchorTagComb = document.querySelector('div a')
+		console.log(anchorTagComb);
+
+		let hyperText = anchorTagComb.innerText;
+		console.log(hyperText);
+
+		let spanTag = document.querySelector('#msg');
+		spanTag.innerText='Hello Jspider';
+		console.log(spanTag);
+	</script>
+</body>
+</html>

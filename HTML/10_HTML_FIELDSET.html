@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML FIELDSET</title>
+	<style>
+		div
+		{
+			width: 400px;
+			margin:100px auto;
+			border-radius: 20px;
+		}
+		fieldset
+		{
+			border-radius: 20px;
+			border:2px solid red;
+		}
+		fieldset legend
+		{
+			border-radius: inherit;
+			border:inherit;
+			padding: 5px 10px;
+		}
+		input[type='text'],input[type='password']
+		{
+			border-radius: 10px;
+			border:none;
+			outline: none;
+			background-color: rgba(255,0,0,0.4);
+			height: 20px;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<form>
+			<fieldset>
+				<legend>Login Here</legend>
+					<table>
+						<tr>
+							<td><label>Username:-</label></td>
+							<td><input type="text" name="usn"></td>
+						</tr>
+						<tr>
+							<td><label>Password:-</label></td>
+							<td><input type="password" name="pw"></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<input type="submit" name="sub">
+								<input type="reset" name="res">
+							</td>
+						</tr>
+					</table>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

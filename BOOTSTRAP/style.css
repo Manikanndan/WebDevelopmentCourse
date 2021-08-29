@@ -1,0 +1,24 @@
+.bg-primary,.btn-primary
+{
+	background: linear-gradient(45deg,darkslategrey,rgb(0,170,250));
+}
+.bg-secondary,.btn-secondary
+{
+	background: linear-gradient(45deg,darkslategrey,rgb(216,32,252));
+}
+.bg-info,.btn-info 
+{
+	background: linear-gradient(45deg,darkslategrey,rgb(0,202,211));	
+}
+.bg-success,.btn-success
+{
+	background: linear-gradient(45deg,darkslategrey,rgb(0,175,56));
+}
+.bg-danger,.btn-danger
+{
+	background: linear-gradient(45deg,darkslategrey,rgb(236,9,55));
+}
+.bg-warning,.btn-warning
+{
+	background: linear-gradient(45deg,darkslategrey,rgb(236,198,0));
+}

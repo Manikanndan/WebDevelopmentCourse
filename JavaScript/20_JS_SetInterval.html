@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Set Interval</title>
+</head>
+<body>
+<script>
+	let count=0
+
+	let countValue=()=>
+	{
+		count++;
+		console.log(count);
+		console.log(new Date().toLocaleTimeString());
+	}
+	//countValue();
+	console.log(new Date().toLocaleTimeString());
+	let interval=setInterval(countValue,1000);
+
+	setTimeout(()=>
+	{
+		clearInterval(interval);
+	},5000)
+</script>
+</body>
+</html>

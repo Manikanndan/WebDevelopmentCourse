@@ -1,0 +1,61 @@
+section 
+{
+	margin: 120px 0 0 500px;
+	border: 2px outset grey;
+	width: 25%;
+	text-align: center;
+	border-radius: 10px;
+	height: 100%;
+	background-color: #DCF09C;
+	font-family: sans-serif;
+}
+
+#error-msg
+{
+	width: 20%;
+	margin: auto;
+	font-family: cursive;
+	text-align: center;
+	background-color: red;
+	color: black;
+	font-weight: 400;
+	font-size: 20px;
+	font-style: italic;
+	border-radius: 10px;
+	margin-bottom: -50px;
+	text-transform: capitalize;
+} 
+
+section h2
+{
+	color: #122958;
+	text-transform: capitalize;
+	font-size: 25px;
+	text-decoration: underline;
+	font-style: italic;
+	font-family: cursive;
+	font-weight: 400;
+}
+
+section input[type='text'],input[type='email'],input[type='password']
+{
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 80%;
+	font-family: cursive;
+}
+
+section input[type='submit']
+{
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 2px solid red;
+	border-radius: 5px;
+	width: 30%;
+	color: #620483;
+	font-weight: 800;
+	background-color: orange;
+}	

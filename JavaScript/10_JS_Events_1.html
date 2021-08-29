@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Events</title>
+	<style>
+		div
+		{
+			background-color: limegreen;
+			padding: 20px;
+			text-align: center;
+		}
+
+		button
+		{
+			padding: 10px 17px;
+			width: 140px;
+			background-color: blue;
+			outline: none;
+			border: none;
+			color: white;
+		}
+
+		button:hover
+		{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h2 id="display">Message</h2>
+		<button onclick="displayMessage('Hello','whitesmoke')">Hello</button>
+		<button onclick="displayMessage('Hi','blue')">Hi</button>
+		<button onclick="displayMessage('Bye','red')">Bye</button>
+	</div>
+<script>
+	let displayMessage=(message,color)=>
+	{
+		let messageTag=document.querySelector('#display');
+		messageTag.innerText=message;
+		messageTag.style.color=color;
+	}
+</script>
+</body>
+</html>

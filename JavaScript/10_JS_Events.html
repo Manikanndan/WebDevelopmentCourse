@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Events</title>
+	<style>
+		div
+		{
+			background-color: limegreen;
+			padding: 20px;
+			text-align: center;
+		}
+
+		button
+		{
+			padding: 10px 17px;
+			width: 140px;
+			background-color: blue;
+			outline: none;
+			border: none;
+			color: white;
+		}
+
+		button:hover
+		{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h2 id="display">Message</h2>
+		<button onclick="sayHello();">Hello</button>
+		<button onclick="sayHi();">Hi</button>
+		<button onclick="sayBye();">Bye</button>
+	</div>
+<script>
+	let sayHello=()=>
+	{
+		let messageTag=document.querySelector('#display');
+		messageTag.innerText='Hello';
+	}
+
+	let sayHi=()=>
+	{
+		let messageTag=document.querySelector('#display');
+		messageTag.innerText='Hi';
+	}
+
+	let sayBye=()=>
+	{
+		let messageTag=document.querySelector('#display');
+		messageTag.innerText='Bye';
+	}
+</script>
+</body>
+</html>

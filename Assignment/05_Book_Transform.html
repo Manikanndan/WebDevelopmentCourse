@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BOX TRANSFORM</title>
+	<style>
+		div
+		{
+			box-shadow: 0 0 10px blueviolet;
+			width: 400px;
+			height: 450px;
+			margin: 100px auto;
+			overflow: hidden;
+			position: relative;
+		}
+
+		div img
+		{
+			width: inherit;
+			height: inherit;
+			transform: translateX(100%);
+			transition: all 1s;
+		}
+
+		div:hover img
+		{
+			transform: translateX(0%);
+		}
+
+		.text
+		{
+			position: absolute;
+			top: -100px;
+			left: -0px;
+			transform-origin: left;
+			transition: all 1s;
+			transform: perspective(200px) rotateY(0deg);
+			background-color:darkcyan;
+		}
+
+		div:hover .text
+		{
+			transform: perspective(200px) rotateY(-180deg);
+		}
+
+		p
+		{
+			padding: 20px;
+			text-align: justify;
+			text-transform: capitalize;
+			font-style: italic;
+			font-style: 20px;
+			color:beige;
+			margin-top: -5px;
+		}
+
+		.p1
+		{
+			color: black;
+			font-weight: bolder;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://www.filmibeat.com/ph-big/2020/02/v-2020_158253142110.jpg">
+		<div class="text">
+			<p class="p1">TO LOOK INSIDE THE BOOK PLEASE HOVER ON IT.</p>
+			<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+		</div>
+	</div>
+</body>
+</html>

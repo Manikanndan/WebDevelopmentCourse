@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS COMBINATORS/Mixed Selectors</title>
+	<style>
+		/*child selector*/
+		header>a
+		{
+			color: orangered;
+		}
+
+		header>h1>a
+		{
+			color: darkred;
+		}
+
+		/*descendent selector*/
+		 body>div h1
+		{
+			color: limegreen;
+		}
+
+		/*adjacent sibling selector*/
+		h1+h2
+		{
+			color: brown;
+		}
+
+		/*general sibling selector*/
+		h1~h3
+		{
+			color: pink;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="#">HYPER Link-2</a>
+		</h1>
+		<h2>H2 Tag</h2>
+		<h3>H3 Tag</h3>
+		<a href="#">HYPER Link-1</a>
+	</header>
+	<div>
+		<h1>H1 Tag</h1>
+		<h2>H2 Tag</h2>
+	</div>
+	<footer>
+		<a href="#">HYPER Link-1</a>
+		<h1>H1 Tag</h1>
+		<h2>H2 Tag</h2>
+		<h3>H3 Tag</h3>
+	</footer>
+</body>
+</html>

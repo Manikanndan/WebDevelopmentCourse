@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Objects</title>
+</head>
+<body>
+<script>
+	let mobile=
+	{
+		brand:'Apple',
+		price:40000,
+		color:'silver'
+	};
+	console.log(mobile);
+	console.log(typeof mobile);
+	console.log(mobile.brand);
+	//accessing non-existing propertites
+	console.log(mobile.ram);//undefined
+
+
+	let student=
+	{
+		sno:'AA01',
+		name:'mani',
+		age:24,
+		course:'Python',
+		address:
+		{
+			street:'1st cross',
+			landmark:'Behind Shiva Temple',
+			area:'Murugeshplaya',
+			city:'Bangalore',
+			country:'India'
+		}
+	};
+
+	console.log(student);
+	console.log(student.address);
+	console.log(student.address.area);
+	console.log(student.address.country);
+
+	//De-structing (ES6)
+	let {landmark,city}=student.address;
+	console.log(landmark);
+	console.log(city);
+
+
+	let passingObject=(mobile)=>
+	{
+		console.log(mobile);
+	}
+	passingObject(mobile);
+
+	let birdObject=(bird)=>
+	{
+		console.log(bird)
+	}
+	birdObject({name:'peacock',color:'blue'});
+
+	//acessing props using [] natation
+	console.log(mobile['brand']); 
+
+	//difference between . and [] notation
+	console.log(mobile.price);
+	let prop='color';
+	console.log(mobile.prop);
+	console.log(mobile[prop]);
+</script>
+</body>
+</html>

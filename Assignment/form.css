@@ -1,0 +1,170 @@
+body
+{
+	background-image: url('Images/bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#text
+{
+	color: white;
+	text-transform: capitalize;
+	font-family: Arial;
+	width: 437px;
+	margin-left: 450px;		
+	-webkit-text-stroke: 1px red;	
+}
+
+#box-1 
+{
+	color: white;
+	font-family: Arial;
+	font-size: 15px;
+	text-transform: capitalize;
+	margin: auto 10px;
+	opacity: 0.8;
+}
+
+#box-1 fieldset
+{
+	border-radius:0 20px 0 20px;
+	border:1px solid white;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#box-1 fieldset legend
+{
+	border:1px solid white;	
+	border-radius: 0 20px 0 20px;
+	padding: 10px;
+	font-size: 15px;
+	background: linear-gradient(to right,black,brown,black);
+}
+
+#box-1 table,tr,td
+{
+	padding-right: 50px;
+	padding-bottom: 6px;
+}
+
+#box-2 
+{
+	color: white;
+	font-family: Arial;
+	font-size: 15px;
+	text-transform: capitalize;
+	margin: 20px 10px 20px 10px;
+	opacity: 0.8;
+}
+
+#box-2 fieldset
+{
+	border-radius:0 20px 0 20px;
+	border:1px solid white;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#box-2 fieldset legend
+{
+	border:1px solid white;	
+	border-radius: 0 20px 0 20px;
+	padding: 10px;
+	font-size: 15px;
+	background: linear-gradient(to right,black,brown,black);
+}
+
+
+#box-2 fieldset,table,tr,th,td
+{
+	padding-right: 70px;
+	padding-bottom: 6px;
+}
+
+#box-2 fieldset,table,tr,label
+{
+	text-align: left;
+}
+
+
+#box-3 
+{
+	color: white;
+	font-family: Arial;
+	font-size: 15px;
+	text-transform: capitalize;
+	margin: 20px 10px 20px 10px;
+	opacity: 0.8;
+}
+
+#box-3 fieldset
+{
+	border-radius:0 20px 0 20px;
+	border:1px solid white;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#box-3 fieldset legend
+{
+	border:1px solid white;	
+	border-radius: 0 20px 0 20px;
+	padding: 10px;
+	font-size: 15px;
+	background: linear-gradient(to right,black,brown,black);
+}
+
+#box-3 table,tr,th,td
+{
+	padding-right: 50px;
+	padding-bottom: 6px; 
+}
+
+#box-3 fieldset,table,tr,label
+{
+	text-align: left;
+}
+
+#box-4 
+{
+	color: white;
+	font-family: Arial;
+	font-size: 15px;
+	text-transform: capitalize;
+	margin: 20px 10px 20px 10px;
+	opacity: 0.8;
+}
+
+#box-4 fieldset
+{
+	border-radius:0 20px 0 20px;
+	border:1px solid white;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#box-4 fieldset legend
+{
+	border:1px solid white;	
+	border-radius: 0 20px 0 20px;
+	padding: 10px;
+	font-size: 15px;
+	background: linear-gradient(to right,black,brown,black);
+}
+
+#box-4 table,tr,th,td
+{
+	padding-right: 50px;
+	padding-bottom: 6px;
+}
+
+input[type="submit"],input[type="reset"]
+{
+	border:1px solid white;	
+	border-radius: 0 20px 0 20px;
+	padding: 10px 20px 10px 20px;
+	font-size: 15px;
+	background: linear-gradient(to right,black,brown,black);
+	color: white;	
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Control Statements</title>
+</head>
+<body>
+	<script>
+		//if condition
+		let age = 24;
+		if(age>18)
+		{
+			console.log("Eligible to vote");
+		}
+
+		//if else condition
+		let age1=17;
+		if(age1>18)
+		{
+			console.log("Eligible to vote");
+		}
+		else
+		{
+			console.log("Not eligible to vote")
+		}
+
+		//if else if  else condition
+		let value1=40;
+		let value2=20;
+		if(value1 == value2)
+		{
+			console.log(`${value1} equal to ${value2}`);
+		}
+		else if(value1<value2)
+		{
+			console.log(`${value1} is less than ${value2}`);
+		}
+		else
+		{
+			console.log(`${value1} is greater than ${value2}`);
+		}
+
+
+		//switch expression
+		switch (new Date().getDay()) 
+		{
+			case 0:
+			day = "Sunday";
+			break;
+			case 1:
+			day = "Monday";
+			break;
+			case 2:
+			day = "Tuesday";
+			break;
+			case 3:
+			day = "Wednesday";
+			break;
+			case 4:
+			day = "Thursday";
+			break;
+			case 5:
+			day = "Friday";
+			break;
+			case 6:
+			day = "Saturday";
+		}
+		console.log(day);
+	</script>
+</body>
+</html>

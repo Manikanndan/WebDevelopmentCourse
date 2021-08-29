@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS DOM</title>
+	<link rel="stylesheet" href="../BOOTSTRAP/MDB/css/bootstrap.css">
+	<link rel="stylesheet" href="../BOOTSTRAP/MDB/css/mdb.css">
+	<link rel="stylesheet" href="../BOOTSTRAP/MDB/css/styles.css">
+	<link rel="stylesheet" href="../fontawesome/fonts/css/all.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="card">
+					<div class="card-header text-center text-white bg-warning">
+						<h2>JS Change Events</h2>
+					</div>
+					<div class="card-body bg-light">
+						<form>
+							<div class="form-group">
+								<select class="form-control" id="select-box">
+									<option value="">Select A City</option>
+									<option value="BANGALORE">Bangalore</option>
+									<option value="MUMBAI">Mumbai</option>
+									<option value="CHENNAI">Chennai</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="card-footer bg-warning text-white text-center">
+					<h2 id="display"></h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+	let selectBox=document.querySelector("#select-box");
+	let displayTag=document.querySelector("#display");
+
+	selectBox.addEventListener('change',function()
+	{
+		let selectedValue=selectBox.value;
+		displayTag.innerText=selectedValue;
+	})
+</script>
+</body>
+</html>

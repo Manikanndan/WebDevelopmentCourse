@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arrays and Objects</title>
+</head>
+<body>
+<script>
+	let employees=[
+	{
+		name:'mani',
+		age:24,
+		gender:'male',
+		active:true
+	},
+	{
+		name:'kevin',
+		age:23,
+		gender:'male',
+		active:false	
+	},
+	{
+		name:'pooja',
+		age:22,
+		gender:'female',
+		active:true	
+	},
+	{
+		name:'swathi',
+		age:21,
+		gender:'female',
+		active:false	
+	}];
+	console.log(employees);
+
+	for (let employee of employees)
+	{
+		console.log(employee);
+	}
+
+	//male employees
+	for(let maleEmps of employees)
+	{
+		if(maleEmps.gender==='male')
+		{
+			console.log(maleEmps);
+		}
+	}
+
+	//female employees
+	let femaleEmps=[];
+	for(let employee of employees)
+	{
+		if(employee.gender==='female')
+		{
+			//console.log(employee);
+			femaleEmps.push(employee);
+		}
+	}
+	console.log(femaleEmps);
+
+	//filter function
+	let maleEmployees=employees.filter((employee)=>
+	{
+		return employee.gender=='male';
+	})
+	console.log(maleEmployees);
+</script>
+</body>
+</html>

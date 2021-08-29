@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DOM Style</title>
+</head>
+	<style>
+		h1{
+			text-transform: capitalize;
+		}
+	</style>
+<body>
+	<h1>Welcome to DOM.</h1>
+<script>
+	let headingTag=document.querySelector('h1');
+	console.log(headingTag);
+
+	headingTag.style.color='blue';
+	headingTag.style.backgroundColor='yellow';
+	headingTag.style.padding='40px';
+	headingTag.style.margin='20px';
+	headingTag.style.textTransform='capitalize';
+	headingTag.style.textDecoration='underline';
+	headingTag.style.textAlign='center';
+</script>
+</body>
+</html>

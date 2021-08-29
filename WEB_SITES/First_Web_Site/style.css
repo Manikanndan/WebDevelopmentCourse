@@ -1,0 +1,52 @@
+
+html
+{
+	scroll-behavior:smooth;
+}
+body
+{
+	background:linear-gradient(45deg,orange,white,green);
+	text-align:center;
+	font-family:'comic sans ms',sans-serif;
+}
+#links a
+{
+	background:linear-gradient(45deg,red,yellow,green);
+	display:inline-block;
+	width:100px;
+	text-align:center;
+	padding:7px 20px;
+	margin:5px;
+	border-radius:10px;
+	text-decoration:none;
+}
+#links a:hover
+{
+	box-shadow:0 0 10px white;
+}
+
+h1
+{
+	font-size:40px;
+}
+
+h2
+{
+	background:linear-gradient(45deg,green,red,blue);
+	width:70%;
+	color:white;
+	margin:auto;
+	padding:20px;
+	border-radius:50%;
+	border:5px dashed yellow;
+}
+table
+{
+	width:100%;
+}
+img
+{
+	border-radius:20px;
+	padding:10px;
+	box-shadow:0 0 10px brown;
+}

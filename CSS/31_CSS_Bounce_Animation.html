@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bounce Animation</title>
+	<style>
+		body 
+		{
+			background-color: black;
+		}
+
+		div
+		{
+			margin: 200px;
+			position: relative;
+			left: 200px;
+		}
+
+		div span
+		{
+			background-color: black;
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			margin: 20px;
+			border-radius: 50%;
+			box-shadow: 0 -5px 10px white;
+			animation: bounce 1s linear 0s infinite alternate;
+		}
+
+		@keyframes bounce
+		{
+			0%,50%
+			{
+				transform: translateY(-100px);
+			}
+			50%
+			{
+				transform: translateY(50px);
+			}
+		}
+
+		div span:nth-child(1)
+		{
+			background-color: green;
+			animation-delay: 0.1s;
+		}
+
+		div span:nth-child(2)
+		{
+			background-color: deeppink;
+			animation-delay: 0.4s;	
+		}
+
+		div span:nth-child(3)
+		{
+			background-color: blue;
+			animation-delay: 0.2s;	
+		}
+
+		div span:nth-child(4)
+		{
+			background-color: red;
+			animation-delay: 0.8s;	
+		}
+
+		div span:nth-child(5)
+		{
+			background-color: yellow;
+			animation-delay: 0.4s;	
+		}
+
+		div span:nth-child(6)
+		{
+			background-color: coral;
+			animation-delay: 0.12s;	
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</body>
+</html>

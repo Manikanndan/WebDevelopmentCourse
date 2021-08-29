@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS SCALE</title>
+	<style>
+		div
+		{
+			box-shadow: 0 0 10px blue;
+			width: 450px;
+			height: 300px;
+			border-radius: 20px;
+			margin: 100px auto;
+			overflow: hidden;
+			position: relative;
+		}
+
+		div img
+		{
+			border-radius: 20px;
+			width: inherit;
+			height: inherit;
+			transition: all 1s;
+		}
+
+		div:hover img
+		{
+			transform: scale(1.3,1.3);
+		}
+
+		.text
+		{
+			position: absolute;
+			top: -100px;
+			left: 0px;
+			width: 50%;
+			background-color: rgba(0, 0, 255, 0.4);
+			transform-origin: left;
+			transition: all 1s;
+			transform: perspective(200px) rotateY(180deg);
+		}
+
+		div:hover .text
+		{
+			transform: perspective(200px) rotateY(0deg);	
+		}
+
+		p 
+		{
+			text-align: justify;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.wrapper
+		{
+			background-color: darksalmon;
+			position: absolute;
+			top: -100px;
+			left: 0px;
+			transition: all 1s;
+		}
+
+		div:hover .wrapper
+		{
+			/*transform: translateY(-100%);*/
+			transform: skewY(90deg);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://static.toiimg.com/thumb/msid-54559212,width-748,height-499,resizemode=4,imgsize-307081/.jpg">
+		<div class="text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="wrapper">
+			
+		</div>
+	</div>
+</body>
+</html>

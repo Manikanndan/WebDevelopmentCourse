@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Screen Size</title>
+</head>
+<body>
+	<h1 align="center">Screen Size:<span id="screen"></span></h1>
+	<script>
+		window.addEventListener('resize',function()
+		{
+			let screenSize = window.innerWidth;
+			document.querySelector('#screen').innerText = `${screenSize}px`;
+		})
+	</script>
+</body>
+</html>
